@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081226"/>
+      <stop offset="100%" stop-color="#14284a"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff6cf"/>
+      <stop offset="100%" stop-color="#e3c878"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="900" cy="160" r="88" fill="url(#moon)"/>
+  <circle cx="950" cy="135" r="88" fill="#081226"/>
+  <circle cx="180" cy="120" r="3" fill="#fff"/>
+  <circle cx="260" cy="180" r="4" fill="#fff"/>
+  <circle cx="1050" cy="240" r="3" fill="#fff"/>
+  <text x="120" y="320" fill="#fff8de" font-size="68" font-family="Georgia, serif">Celestial Crescent</text>
+  <text x="120" y="400" fill="#d9e4ff" font-size="36" font-family="Arial, sans-serif">Elegant animated Eid Mubarak greeting card</text>
+</svg>

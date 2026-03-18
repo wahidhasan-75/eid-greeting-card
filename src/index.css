@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 50% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 50% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 45 80% 60%;
+    --primary-foreground: 222 84% 5%;
+
+    --secondary: 220 30% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 20% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 220 30% 15%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 45 80% 60%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --midnight: 222 84% 5%;
+    --midnight-mid: 217 50% 10%;
+    --midnight-light: 215 40% 18%;
+    --gold-leaf: 45 80% 60%;
+    --gold-glow: 45 90% 75%;
+    --silver-mist: 220 10% 90%;
+    --star-white: 0 0% 100%;
+
+    --glass-bg: 0 0% 100%;
+    --glass-border: 0 0% 100%;
+
+    --sidebar-background: 222 50% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 45 80% 60%;
+    --sidebar-primary-foreground: 222 84% 5%;
+    --sidebar-accent: 220 30% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 45 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-display {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.03em;
+  }
+}
+
+.glass-card {
+  @apply backdrop-blur-xl rounded-[2rem] shadow-2xl relative overflow-hidden;
+  background: rgba(10, 20, 60, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.control-button {
+  @apply p-3 rounded-full transition-all;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.control-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.control-button:active {
+  transform: scale(0.95);
+}
+
+.moon-glow {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
+}
+
+.text-glow {
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, hsl(45, 80%, 60%), hsl(45, 90%, 75%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
